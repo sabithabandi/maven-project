@@ -38,6 +38,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
 			<db:dynamic-query><![CDATA[select * from flights]]></db:dynamic-query>
 		</db:select>
 		<json:object-to-json-transformer doc:name="Object to JSON" />
+        <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
 		<jms:outbound-endpoint queue="flights" connector-ref="Active_MQ" doc:name="sendToJMS" />
 	</flow>
 
