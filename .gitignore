@@ -2,6 +2,11 @@ bin/
 bin-debug/
 bin-release/
 target/
+.classpath
+.project
+activemq-data/
+catalog/
+derby.log
 
 # Other files and folders
 .settings/
