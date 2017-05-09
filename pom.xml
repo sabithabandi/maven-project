@@ -35,8 +35,6 @@
      <workerType>Micro</workerType>
         <redeploy>true</redeploy>
         <environment>Production</environment>
-        <proxyHostname>proxy.wellsfargo.com</proxyHostname>
-        <proxyPort>8080</proxyPort>
     </configuration>
     <executions>
         <execution>
